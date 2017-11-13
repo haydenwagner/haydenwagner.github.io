@@ -1,66 +1,74 @@
+* {
+  box-sizing: border-box; }
+
 html,
 body {
   padding: 0;
   margin: 0;
   height: 100%; }
 
-.splash {
-  background: linear-gradient(rgba(0, 0, 0, 0.25), #fff), #009688;
-  overflow: hidden; }
-  .splash .logo-img-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    transform: rotateX(180deg) rotateZ(-15deg); }
-    .splash .logo-img-container svg path {
-      transition: fill-opacity 1s;
-      fill-opacity: .75s; }
-    .splash .logo-img-container svg.left path {
-      fill: #fff;
-      stroke-width: 0px; }
-    .splash .logo-img-container svg.right {
-      transform: rotate(180deg); }
-      .splash .logo-img-container svg.right path {
-        fill: #fff;
-        stroke-width: 0px; }
-    .splash .logo-img-container .splish.face-hover path {
-      fill-opacity: 0; }
-    .splash .logo-img-container .image-and-circle {
-      position: absolute;
-      width: 20%;
-      display: flex;
-      align-items: center;
-      z-index: 1;
-      min-width: 75px; }
-      .splash .logo-img-container .image-and-circle img#face {
-        position: absolute;
-        border-radius: 100%;
-        width: 100%;
-        z-index: 1;
-        transform: rotateZ(195deg); }
-        .splash .logo-img-container .image-and-circle img#face:hover ~ svg circle {
-          fill: #009688; }
-      .splash .logo-img-container .image-and-circle svg {
-        position: absolute;
-        height: auto;
-        width: 110%;
-        left: -5%; }
-        .splash .logo-img-container .image-and-circle svg circle {
-          fill: #fff; }
-
 .wrapper {
   display: flex;
   flex-direction: column;
-  height: 100%; }
+  height: 100%;
+  align-items: center; }
+  .wrapper header {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), #fff), #009688;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 33%;
+    min-width: 300px;
+    position: relative;
+    width: 100%; }
+    .wrapper header img#face {
+      border-radius: 100%;
+      height: auto;
+      border: 5px solid white;
+      width: 200px;
+      position: absolute;
+      bottom: -35px; }
+  .wrapper #blurb {
+    text-align: center;
+    color: #444;
+    font-size: 18px;
+    font-family: 'Merriweather', sans-serif;
+    margin-top: 70px;
+    padding: 0 35px;
+    max-width: 400px;
+    height: 33%; }
+    .wrapper #blurb h4 {
+      margin-top: 0; }
+    .wrapper #blurb p {
+      font-weight: 300;
+      max-width: 940px;
+      margin: 1rem auto; }
   .wrapper footer {
     background: linear-gradient(#fff, rgba(0, 0, 0, 0.25)), #009688;
-    flex: 1 0 auto;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 3rem; }
+    height: 33%;
+    width: 100%; }
+    .wrapper footer .link-container {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem; }
+      .wrapper footer .link-container a {
+        display: inline-block;
+        margin-bottom: 0;
+        touch-action: manipulation;
+        cursor: pointer;
+        user-select: none; }
+        .wrapper footer .link-container a:first-of-type {
+          margin-right: 1rem; }
+        .wrapper footer .link-container a img {
+          height: 40px; }
+        .wrapper footer .link-container a svg {
+          width: 40px;
+          height: 40px; }
+          .wrapper footer .link-container a svg path {
+            fill: white; }
     .wrapper footer button {
       font-family: Merriweather, sans-serif;
       flex: 0 0 20%;
@@ -79,15 +87,3 @@ body {
         background: #aaa; }
       .wrapper footer button:last-of-type {
         margin-left: 1.5rem; }
-
-#blurb {
-  text-align: center;
-  color: #444;
-  font-size: 36px;
-  font-family: 'Merriweather', sans-serif; }
-  #blurb p {
-    font-weight: 300;
-    max-width: 940px;
-    margin: 3rem auto; }
-
-/*# sourceMappingURL=styles.css.map */

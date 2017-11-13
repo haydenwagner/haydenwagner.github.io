@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayden Wagner</title>
+
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700');
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="splash">
+            <div id="design-container">
+                <div class="logo-img-container">
+                    <div class="image-and-circle">
+                        <img id="face" src="./assets/hwagner-bw-square_small.jpg"/>
+                        <svg width="200" height="200" viewBox="0 0 200 200">
+                            <circle r="100" cx="100" cy="100"></circle>
+                        </svg>
+                    </div>
+                    <!--<svg  class="splish left" xmlns="http://www.w3.org/2000/svg" width="763" height="370.333" viewBox="0 0 763 370.333"><path fill="none" stroke="#231F20" stroke-miterlimit="10" d="M132.474 37.316s48.71 34.25 98.34-12.844c49.628-47.095 61.61.318 57.12 19.123-4.491 18.805 9.746 19.463 23.063 9.62 13.317-9.842 54.942-49.251 51.623 19.182-3.319 68.433 70.71-26.295 80.135-37.068 9.426-10.772 92.211-87.646 114.608 42.446 9.32 55.688 9.42 80.904 61.854 53.839 28.146-14.527 14.855-1.937 34.271 14.352 19.414 16.289 63.681-2.612 74.278-9.679 10.599-7.064 68.888-30.156-2.147 26.217-71.038 56.378-73.863-12.154-124.391 41.58-50.531 53.733-67.002 71.048-75.046-1.47-8.043-72.52-50.354-21.622-61.726-11.313-11.374 10.308-57.063 32.298-66.345 10.889-9.281-21.408-10.864-5.229-25.441-3.248-2.382.324-13.871 1.401-39.925-15.786-26.053-17.19-76.041 11.313-91.652 33.632-15.61 22.317-58.58 87.451-45.902 17.139 12.677-70.311-58.601 24.392-71.153 45.382-12.552 20.993-118.186 184.94-45.09 2.256 25.704-61.718-28.427-119.194-49.448-134.496-21.021-15.3-49.194-49.445 2.226-95.426C83.145 5.66 132.474 37.316 132.474 37.316z"/></svg>
+
+                    <svg class="splish right" xmlns="http://www.w3.org/2000/svg" width="763" height="370.333" viewBox="0 0 763 370.333">
+                        <path fill="none" stroke="#231F20" stroke-miterlimit="10" d="M132.474 37.316s48.71 34.25 98.34-12.844c49.628-47.095 61.61.318 57.12 19.123-4.491 18.805 9.746 19.463 23.063 9.62 13.317-9.842 54.942-49.251 51.623 19.182-3.319 68.433 70.71-26.295 80.135-37.068 9.426-10.772 92.211-87.646 114.608 42.446 9.32 55.688 9.42 80.904 61.854 53.839 28.146-14.527 14.855-1.937 34.271 14.352 19.414 16.289 63.681-2.612 74.278-9.679 10.599-7.064 68.888-30.156-2.147 26.217-71.038 56.378-73.863-12.154-124.391 41.58-50.531 53.733-67.002 71.048-75.046-1.47-8.043-72.52-50.354-21.622-61.726-11.313-11.374 10.308-57.063 32.298-66.345 10.889-9.281-21.408-10.864-5.229-25.441-3.248-2.382.324-13.871 1.401-39.925-15.786-26.053-17.19-76.041 11.313-91.652 33.632-15.61 22.317-58.58 87.451-45.902 17.139 12.677-70.311-58.601 24.392-71.153 45.382-12.552 20.993-118.186 184.94-45.09 2.256 25.704-61.718-28.427-119.194-49.448-134.496-21.021-15.3-49.194-49.445 2.226-95.426C83.145 5.66 132.474 37.316 132.474 37.316z"/>
+                    </svg>-->
+                </div>
+
+            </div>
+        </div>
+        <div id="blurb">
+            <h4>Hi, my name is Hayden Wagner</h4>
+            <p>I am a developer building tools and systems with Javascript and other technologies.</p>
+        </div>
+
+        <footer>
+            <button>Github</button>
+            <button>LinkedIn</button>
+        </footer>
+    </div>
+
+    <script>
+        window.onload = function(){
+            var face = document.getElementById('face');
+            var splishes = document.getElementsByClassName('splish');
+            face.addEventListener('mouseover', function(){
+                for(var i = 0; i<splishes.length; i++){
+                    splishes[i].classList.add('face-hover');
+                }
+            })
+
+            face.addEventListener('mouseout', function(){
+                for(var i = 0; i<splishes.length; i++){
+                    splishes[i].classList.remove('face-hover');
+                }
+            })
+        }
+    </script>
+</body>
+</html>

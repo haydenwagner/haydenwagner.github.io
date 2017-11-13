@@ -20,6 +20,10 @@ $color_splish-splash_right: #fff;
 $color_center-circle: #fff;
 
 
+*{
+  box-sizing: border-box;
+}
+
 html,
 body{
   padding: 0;
@@ -27,107 +31,99 @@ body{
   height: 100%;
 }
 
-.splash {
-  //background: linear-gradient($blue-gray,$purple);
-  background: $background_splash;
-  overflow: hidden;
 
-  .logo-img-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1200px;
-    //width: 100%;
-    margin: 0 auto;
-    //position: relative;
-    transform: rotateX(180deg) rotateZ(-15deg);
-
-    svg {
-      path{
-        transition: fill-opacity 1s;
-        fill-opacity: .75s;
-      }
-
-      &.left {
-        //transform: scale(.85);
-        path {
-          fill: $color_splish-splash_left;
-          stroke-width: 0px;
-        }
-      }
-
-      &.right{
-        //transform: scale(.85) rotate(180deg);
-        transform: rotate(180deg);
-        path{
-          fill: $color_splish-splash_right;
-          stroke-width: 0px;
-        }
-      }
-    }
-
-    .splish.face-hover{
-      path{
-        //fill:$red;
-        //-webkit-transition: fill-opacity 1s;
-        //-moz-transition: fill-opacity 1s;
-        //-ms-transition: fill-opacity 1s;
-        //-o-transition: fill-opacity 1s;
-        //transition: fill-opacity 1s;
-        fill-opacity: 0;
-      }
-    }
-
-    .image-and-circle{
-      position: absolute;
-      width: 20%;
-      display: flex;
-      align-items: center;
-      z-index: 1;
-      min-width: 75px;
-
-      img#face{
-        position: absolute;
-        border-radius: 100%;
-        width:100%;
-        z-index: 1;
-        transform: rotateZ(195deg);
-
-        &:hover {
-          & ~ svg {
-            circle {
-              fill: #009688;
-            }
-          }
-        }
-      }
-
-      svg{
-        position: absolute;
-        height: auto;
-        width: 110%;
-        left: -5%;
-        circle{
-          fill: $color_center-circle;
-        }
-      }
-    }
-  }
-}
 
 .wrapper{
   display: flex;
   flex-direction: column;
   height: 100%;
+  align-items: center;
+
+  header {
+    //background: linear-gradient($blue-gray,$purple);
+    background: $background_splash;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 33%;
+    min-width: 300px;
+    position: relative;
+    width: 100%;
+
+    img#face{
+      border-radius: 100%;
+      height: auto;
+      border: 5px solid white;
+      width: 200px;
+      position: absolute;
+      bottom: -35px;
+    }
+  }
+
+  #blurb{
+    text-align: center;
+    color: #444;
+    //color: #fff;
+    font-size: 18px;
+    font-family: 'Merriweather', sans-serif;
+    margin-top: 70px;
+    padding: 0 35px;
+    max-width: 400px;
+    height: 33%;
+
+    h4{
+      margin-top: 0;
+    }
+
+    p{
+      font-weight: 300;
+      max-width: 940px;
+      margin: 1rem auto;
+      //text-align: left;
+    }
+  }
 
   footer{
     //flex:
     background: $background_footer;
-    flex: 1 0 auto;
+    //flex: 1 0 auto;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 3rem;
+    //padding-top: 3rem;
+    height: 33%;
+    width: 100%;
+
+    .link-container{
+      position: absolute;
+      bottom:1rem;
+      right:1rem;
+
+      a{
+        display: inline-block;
+        //padding: 1rem;
+        margin-bottom: 0;
+        touch-action: manipulation;
+        cursor: pointer;
+        user-select: none;
+
+        &:first-of-type{
+          margin-right: 1rem;
+        }
+
+        img{
+          height: 40px;
+        }
+
+        svg{
+          width: 40px;
+          height: 40px;
+          path{
+            fill: white;
+          }
+        }
+      }
+    }
 
     button{
       font-family: Merriweather, sans-serif;
@@ -163,21 +159,3 @@ body{
     }
   }
 }
-
-#blurb{
-  text-align: center;
-  color: #444;
-  //color: #fff;
-  font-size: 36px;
-  font-family: 'Merriweather', sans-serif;
-  //margin-top: ;
-
-  p{
-    font-weight: 300;
-    max-width: 940px;
-    margin: 3rem auto;
-  }
-}
-
-
-

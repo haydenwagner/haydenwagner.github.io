@@ -12,51 +12,40 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="splash">
-            <div id="design-container">
-                <div class="logo-img-container">
-                    <div class="image-and-circle">
-                        <img id="face" src="./assets/hwagner-bw-square_small.jpg"/>
-                        <svg width="200" height="200" viewBox="0 0 200 200">
-                            <circle r="100" cx="100" cy="100"></circle>
-                        </svg>
-                    </div>
-                    <svg  class="splish left" xmlns="http://www.w3.org/2000/svg" width="763" height="370.333" viewBox="0 0 763 370.333"><path fill="none" stroke="#231F20" stroke-miterlimit="10" d="M132.474 37.316s48.71 34.25 98.34-12.844c49.628-47.095 61.61.318 57.12 19.123-4.491 18.805 9.746 19.463 23.063 9.62 13.317-9.842 54.942-49.251 51.623 19.182-3.319 68.433 70.71-26.295 80.135-37.068 9.426-10.772 92.211-87.646 114.608 42.446 9.32 55.688 9.42 80.904 61.854 53.839 28.146-14.527 14.855-1.937 34.271 14.352 19.414 16.289 63.681-2.612 74.278-9.679 10.599-7.064 68.888-30.156-2.147 26.217-71.038 56.378-73.863-12.154-124.391 41.58-50.531 53.733-67.002 71.048-75.046-1.47-8.043-72.52-50.354-21.622-61.726-11.313-11.374 10.308-57.063 32.298-66.345 10.889-9.281-21.408-10.864-5.229-25.441-3.248-2.382.324-13.871 1.401-39.925-15.786-26.053-17.19-76.041 11.313-91.652 33.632-15.61 22.317-58.58 87.451-45.902 17.139 12.677-70.311-58.601 24.392-71.153 45.382-12.552 20.993-118.186 184.94-45.09 2.256 25.704-61.718-28.427-119.194-49.448-134.496-21.021-15.3-49.194-49.445 2.226-95.426C83.145 5.66 132.474 37.316 132.474 37.316z"/></svg>
-
-                    <svg class="splish right" xmlns="http://www.w3.org/2000/svg" width="763" height="370.333" viewBox="0 0 763 370.333">
-                        <path fill="none" stroke="#231F20" stroke-miterlimit="10" d="M132.474 37.316s48.71 34.25 98.34-12.844c49.628-47.095 61.61.318 57.12 19.123-4.491 18.805 9.746 19.463 23.063 9.62 13.317-9.842 54.942-49.251 51.623 19.182-3.319 68.433 70.71-26.295 80.135-37.068 9.426-10.772 92.211-87.646 114.608 42.446 9.32 55.688 9.42 80.904 61.854 53.839 28.146-14.527 14.855-1.937 34.271 14.352 19.414 16.289 63.681-2.612 74.278-9.679 10.599-7.064 68.888-30.156-2.147 26.217-71.038 56.378-73.863-12.154-124.391 41.58-50.531 53.733-67.002 71.048-75.046-1.47-8.043-72.52-50.354-21.622-61.726-11.313-11.374 10.308-57.063 32.298-66.345 10.889-9.281-21.408-10.864-5.229-25.441-3.248-2.382.324-13.871 1.401-39.925-15.786-26.053-17.19-76.041 11.313-91.652 33.632-15.61 22.317-58.58 87.451-45.902 17.139 12.677-70.311-58.601 24.392-71.153 45.382-12.552 20.993-118.186 184.94-45.09 2.256 25.704-61.718-28.427-119.194-49.448-134.496-21.021-15.3-49.194-49.445 2.226-95.426C83.145 5.66 132.474 37.316 132.474 37.316z"/>
-                    </svg>
-                </div>
-
-            </div>
-        </div>
+        <header>
+            <img id="face" src="./assets/hwagner-bw-square_small.jpg" width="200" height="200"/>
+        </header>
         <div id="blurb">
             <h4>Hi, my name is Hayden Wagner</h4>
-            <p>I am a developer building tools and systems with Javascript and other technologies.</p>
+            <p>I am a developer building tools and systems with JavaScript and other&nbsp;technologies.</p>
+            <p>Currently working at <a href="http://www.solutechnology.com/" target="_blank">Solü&nbsp;Technology&nbsp;Partners.</a></p>
         </div>
-
         <footer>
-            <button>Github</button>
-            <button>LinkedIn</button>
+            <div class="link-container">
+                <a href="https://github.com/haydenwagner">
+                    <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/haydenwagner"><img src="./assets/In-White-48px-R.png"/></a>
+            </div>
         </footer>
     </div>
 
-    <script>
-        window.onload = function(){
-            var face = document.getElementById('face');
-            var splishes = document.getElementsByClassName('splish');
-            face.addEventListener('mouseover', function(){
-                for(var i = 0; i<splishes.length; i++){
-                    splishes[i].classList.add('face-hover');
-                }
-            })
+    <!--<script>-->
+        <!--window.onload = function(){-->
+            <!--var face = document.getElementById('face');-->
+            <!--var splishes = document.getElementsByClassName('splish');-->
+            <!--face.addEventListener('mouseover', function(){-->
+                <!--for(var i = 0; i<splishes.length; i++){-->
+                    <!--splishes[i].classList.add('face-hover');-->
+                <!--}-->
+            <!--})-->
 
-            face.addEventListener('mouseout', function(){
-                for(var i = 0; i<splishes.length; i++){
-                    splishes[i].classList.remove('face-hover');
-                }
-            })
-        }
-    </script>
+            <!--face.addEventListener('mouseout', function(){-->
+                <!--for(var i = 0; i<splishes.length; i++){-->
+                    <!--splishes[i].classList.remove('face-hover');-->
+                <!--}-->
+            <!--})-->
+        <!--}-->
+    <!--</script>-->
 </body>
 </html>
